@@ -1,0 +1,99 @@
+.figBox {
+    padding: 0;
+    margin: 50px 0 0 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgBox {
+    height: 400px;
+    position: relative;
+}
+
+.imgJace {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hoverDiv {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.save {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    padding: auto;
+    border: 0;
+    height: 40px;
+    width: 60px;
+    background-color: rgb(220, 20, 20);
+    color: aliceblue;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.botButtons {
+    position: absolute;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+
+.bot {
+    border-radius: 20px;
+    padding: 7px;
+    border: 0;
+}
+
+i {
+    color: #000000;
+    font-size: 10px;
+}
+
+.black {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    opacity: 0.3;
+    border-radius: 20px;
+    scale: 0.98;
+}
+
+.imgBox:hover .hoverDiv {
+    opacity: 1;
+}
+
+.imgBox:hover .imgJace {
+    scale: 0.98;
+}
+
+.imgBox:hover .save{
+    transform: translateY(20px);
+}
+.imgBox:hover .botButtons{
+    transform: translateY(-20px);
+}
+
+button {
+    cursor: pointer;
+}
